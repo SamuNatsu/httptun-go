@@ -1,0 +1,7 @@
+# Build files
+httptun-go.exe
+
+# Test files
+*.yaml
+*.cert
+*.key
