@@ -12,6 +12,8 @@ import (
 )
 
 func tcp_handler(tcp_conn *net.TCPConn, cfg *Config) {
+	log.Printf("New connection: remote=%s", cfg.RemoteAddr)
+
 	defer tcp_conn.Close()
 
 	dialer := *websocket.DefaultDialer
